@@ -11,7 +11,7 @@ import (
 
 const PROMPT string = ">>>"
 
-func Start(in io.Reader, out io.Writer)  {
+func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 
 	for {
@@ -28,5 +28,5 @@ func Start(in io.Reader, out io.Writer)  {
 			fmt.Fprintf(out, "%+v\n", tok)
 		}
 	}
-	
+
 }
